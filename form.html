@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>feedback form</title>
+</head>
+<body>
+    <h1>Feedback form </h1>
+    <div>
+        <form action="submit.php" method="post">
+            <legend>feedback</legend>
+            <fieldset>
+                <label for="Name">Name</label><br>
+                <input type="text" name="name" id="name" required><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" placeholder="Enter your email" required><br><br>
+                <label for="gender">Select Your gender</label><br>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+                <input type="radio" name="gender" value="Other">Other <br><br>
+                <label for="city">Select Your City</label><br>
+                <input type="checkbox" name="city" value="Bodeli">Bodeli
+                <input type="checkbox" name="city" value="vadodara">vadodara
+                <input type="checkbox" name="city" value="Ahemdabad">Ahemdabad
+                <input type="checkbox" name="city" value="Surat">Surat
+                <input type="checkbox" name="city" value="rajkot">Rajkot <br><br>
+                <label for="state">Select your State</label><br>
+                <input type="radio" name="state" value="Gujrat">Gujrat
+                <input type="radio" name="state" value="Mp">Mp
+                <input type="radio" name="State" value="Up">Up <br><br>
+                <label for="mobile">Contact Number</label><br>
+                <input type="tel" name="mobile" placeholder="Enter Your Contact number" required><br><br>
+                <input type="submit" name="submit">
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
